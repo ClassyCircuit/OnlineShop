@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32104.313
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop.Web", "OnlineShop.Web\OnlineShop.Web.csproj", "{D84FE543-43DD-4ABB-9054-A7D60DF865BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShop.Web", "OnlineShop.Web\OnlineShop.Web.csproj", "{D84FE543-43DD-4ABB-9054-A7D60DF865BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop.Data", "OnlineShop.Data\OnlineShop.Data.csproj", "{C0108F27-B661-4830-B798-364BD6829BCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShop.Data", "OnlineShop.Data\OnlineShop.Data.csproj", "{C0108F27-B661-4830-B798-364BD6829BCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop.Business", "OnlineShop.Business\OnlineShop.Business.csproj", "{569D58E4-F92F-4CD5-946D-FCD5AE5997F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShop.Business", "OnlineShop.Business\OnlineShop.Business.csproj", "{569D58E4-F92F-4CD5-946D-FCD5AE5997F4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{F63AA589-B226-45A2-B60D-BDA830A92E78}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{F3923395-B16C-496F-8ACD-9597F3E797B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Unit", "Tests.Unit\Tests.Unit.csproj", "{BFDA2CB1-0CDC-460E-B332-8D04F0325015}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{592B4B3B-CBF3-4487-9942-4AA6B1301C1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,10 @@ Global
 		{569D58E4-F92F-4CD5-946D-FCD5AE5997F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{569D58E4-F92F-4CD5-946D-FCD5AE5997F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{569D58E4-F92F-4CD5-946D-FCD5AE5997F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFDA2CB1-0CDC-460E-B332-8D04F0325015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFDA2CB1-0CDC-460E-B332-8D04F0325015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFDA2CB1-0CDC-460E-B332-8D04F0325015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFDA2CB1-0CDC-460E-B332-8D04F0325015}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +47,7 @@ Global
 		{D84FE543-43DD-4ABB-9054-A7D60DF865BA} = {F3923395-B16C-496F-8ACD-9597F3E797B1}
 		{C0108F27-B661-4830-B798-364BD6829BCF} = {F63AA589-B226-45A2-B60D-BDA830A92E78}
 		{569D58E4-F92F-4CD5-946D-FCD5AE5997F4} = {F63AA589-B226-45A2-B60D-BDA830A92E78}
+		{BFDA2CB1-0CDC-460E-B332-8D04F0325015} = {592B4B3B-CBF3-4487-9942-4AA6B1301C1F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4495E298-2519-4208-BF44-F364138B4BC6}
