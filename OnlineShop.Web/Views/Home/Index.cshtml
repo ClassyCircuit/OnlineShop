@@ -1,8 +1,27 @@
-﻿@{
+﻿@model HomeViewModel
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
+
+<script language="javascript">
+    function nextImage(linkedList) {
+
+        document.getElementById("topProduct").src == linkedList.Tail.Value;
+    }
+</script>
+
+@if(Model.TopProductList != null && Model.TopProductList.Head != null)
+{
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Top Products</h1>
 </div>
+
+<button style="width:200px; height:100px;" onclick="nextImage(@Model.TopProductList)">Next</button>
+
+<img id="topProduct" style="max-width=300px" src="~/@Model.TopProductList.Head.Value" />
+
+}
+
+

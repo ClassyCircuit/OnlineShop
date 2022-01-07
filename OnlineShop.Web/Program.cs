@@ -1,11 +1,20 @@
 using Microsoft.EntityFrameworkCore;
+using OnlineShop.Business;
+using OnlineShop.Common;
 using OnlineShop.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var cfg = new ShopConfig();
+cfg.WebRootPath = builder.Environment.WebRootPath;
+builder.Configuration.Bind(cfg);
+builder.Services.Configure<ShopConfig>(builder.Configuration);
+builder.Services.AddSingleton<ShopConfig>(cfg);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<Context>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
+builder.Services.AddDataLayer();
+builder.Services.AddBusinessLayer();
 
 var app = builder.Build();
 

@@ -1,0 +1,15 @@
+[
+  {
+    "outputFileName": "wwwroot/js/mybundle.js",
+    "inputFiles": [
+      "node_modules/@popperjs/core/dist/umd/popper.min.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": false
+    },
+    // Optionally generate .map file
+    "sourceMap": false
+  }
+]
